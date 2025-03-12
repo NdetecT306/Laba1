@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cmath>
-
 #include "triangle.h"
-
 using namespace std;
 
 void calculateTriangle(double a, double b, double c) 
@@ -13,7 +11,7 @@ void calculateTriangle(double a, double b, double c)
     bool isIsosceles = (a == b || b == c || a == c);// Проверка на равнобедренность
     // Вывод результатов
     cout << "Периметр треугольника: " << perimeter << "\n";
-    cout << "Площадь треугольника: " << area << "\n"
+    cout << "Площадь треугольника: " << area << "\n";
     if (isIsosceles) 
     {
         cout << "Треугольник равнобедренный.\n";

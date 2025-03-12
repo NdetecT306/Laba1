@@ -1,47 +1,26 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
+
+#include "triangle.h"
+
 using namespace std;
-enum Operation
+
+void calculateTriangle(double a, double b, double c) 
 {
-    Perimeter,
-    Square,
-    Isosceles,
-};
-int main()
-{
-    setlocale(LC_ALL,"RUS");
-    int numOperat;
-    cout << "Выберите операцию:\n0:Посчитать периметр;\n1:Посчитать площадь по формуле Герона;\n2:проверить на равнобедренность." << endl;
-    cin >> numOperat;
-    double a, b, c, p, s;
-    cout << "Введите данные:";
-    cin >> a >> b >> c;
-    while (a <= 0 || b <= 0 || c <= 0)
+    double perimeter = a + b + c;// Периметр
+    double s = perimeter / 2;// Полупериметр для формулы Герона
+    double area = sqrt(s * (s - a) * (s - b) * (s - c));    // Площадь по формуле Герона
+    bool isIsosceles = (a == b || b == c || a == c);// Проверка на равнобедренность
+    // Вывод результатов
+    cout << "Периметр треугольника: " << perimeter << "\n";
+    cout << "Площадь треугольника: " << area << "\n"
+    if (isIsosceles) 
     {
-        cout << "Введеные значения не подходят. Попробуйте еще раз.\nВведите данные:";
-        cin >> a >> b >> c;
-    }
-    switch (numOperat)
+        cout << "Треугольник равнобедренный.\n";
+    } 
+    else 
     {
-    case (Operation::Perimeter):
-        p = a + b + c;
-        cout << "Периметр равен:" << p;
-        break;
-    case (Operation::Square):
-        p = (a + b + c)/2;
-        s = sqrt(p * (p - a) * (p - b) * (p - c));
-        cout << "Площадь равна:" << s;
-        break;
-    case (Operation::Isosceles):
-        if (a != b && a != c && b != c)
-            cout << "Нет, треугольник не равнобедренный";
-        else
-        {
-            cout << "Да, треугольник равнобедренный";
-        }
-        break;
-    default:
-        cout << "Не найдена такая операция";
-        break;
+        cout << "Треугольник не равнобедренный.\n";
     }
 }
+

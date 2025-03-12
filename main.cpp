@@ -1,13 +1,13 @@
 #include <iostream>
-
 #include "triangle.h"
 #include "rectangle.h"
 #include "circle.h"
-
 using namespace std;
 
-int main() {
-  while (true){
+int main() 
+{
+  while (true)
+  {
     cout << "Выберите фигуру:" << endl;
     cout << "1) Прямоугольник" << endl;
     cout << "2) Треугольник" << endl;
@@ -18,7 +18,8 @@ int main() {
     int selectedFugire;
     cin >> selectedFugire;
 
-    switch (selectedFugire) {
+    switch (selectedFugire) 
+    {
       case 1: {
         double width, height;
         cout << "Введите ширину и высоту прямоугольника: ";

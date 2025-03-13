@@ -4,6 +4,12 @@
 #include "circle.h"
 using namespace std;
 
+enum Geometry
+{
+    Rectangle,
+    Triangle,
+    Circle
+};
 int main() 
 {
   while (true)
@@ -20,21 +26,21 @@ int main()
 
     switch (selectedFugire) 
     {
-      case 1: {
+      case Geometry::Rectangle: {
         double width, height;
         cout << "Введите ширину и высоту прямоугольника: ";
         cin >> width >> height;
         calculateRectangle(width, height);
         break;
       }
-      case 2: {
+      case Geometry::Triangle: {
         double a, b, c;
         cout << "Введите длины сторон треугольника: ";
         cin >> a >> b >> c;
         calculateTriangle(a, b, c);
         break;
       }
-      case 3: {
+      case Geometry::Circle: {
         double radius, angle;
         cout << "Введите радиус окружности и угол сектора в градусах: ";
         cin >> radius >> angle;

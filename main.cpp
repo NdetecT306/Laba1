@@ -6,7 +6,7 @@ using namespace std;
 
 enum Geometry
 {
-    Rectangle,
+    Rectangle = 1,
     Triangle,
     Circle
 };

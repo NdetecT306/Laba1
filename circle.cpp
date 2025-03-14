@@ -6,6 +6,10 @@
 using namespace std;
 
 void calculateCircle(double radius, double angle) {
+    if (radius <= 0) || (angle <= 0) {
+        cout << "Обнаружены отрицательные значения" << endl;
+        return;
+    }
     // Длина окружности
     double circumference = 2 * M_PI * radius;
 

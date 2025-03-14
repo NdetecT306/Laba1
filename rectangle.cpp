@@ -6,7 +6,7 @@
 using namespace std;
 
 void calculateRectangle(double width, double height) {
-    if width > 0 and height > 0:
+    if (width > 0 and height > 0){
     // Периметр
         double perimeter = 2 * (width + height);
 
@@ -19,6 +19,8 @@ void calculateRectangle(double width, double height) {
         cout << "Периметр прямоугольника: " << perimeter << "\n";
         cout << "Площадь прямоугольника: " << area << "\n";
         cout << "Длина диагонали прямоугольника: " << diagonal << "\n";
-    else:
+    }
+    else{
         cout << "Такого прямоугольника не существует"
+            }
             }

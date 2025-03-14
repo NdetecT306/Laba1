@@ -22,5 +22,5 @@ void calculateRectangle(double width, double height) {
     }
     else{
         cout << "Такого прямоугольника не существует";
-            }
-            }
+    }
+}

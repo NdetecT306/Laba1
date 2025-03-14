@@ -7,7 +7,7 @@ void calculateTriangle(double a, double b, double c)
 {
     while(a<0 || b<0 || c<0)
     {
-	cout << "Неверные значения. Попробуйте снова."<<endl;
+	cout << "Были введены отрицательные значения. Попробуйте снова."<<endl;
 	cout << "Введите значения:";
 	cin >> a >> b >> c;
     }

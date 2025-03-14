@@ -6,7 +6,7 @@
 using namespace std;
 
 void calculateCircle(double radius, double angle) {
-    if (radius <= 0) || (angle <= 0) {
+    if (radius <= 0 || angle <= 0) {
         cout << "Обнаружены отрицательные значения" << endl;
         return;
     }

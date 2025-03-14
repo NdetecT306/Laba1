@@ -11,7 +11,8 @@ void calculateCircle(double radius, double angle) {
         return;
     }
     if (angle > 360) {
-        cout << "Угол больше 360"
+        cout << "Угол больше 360";
+        return;
     }
     // Длина окружности
     double circumference = 2 * M_PI * radius;

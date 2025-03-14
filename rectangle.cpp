@@ -21,6 +21,6 @@ void calculateRectangle(double width, double height) {
         cout << "Длина диагонали прямоугольника: " << diagonal << "\n";
     }
     else{
-        cout << "Такого прямоугольника не существует"
+        cout << "Такого прямоугольника не существует";
             }
             }

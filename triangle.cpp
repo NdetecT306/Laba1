@@ -5,7 +5,7 @@ using namespace std;
 
 void calculateTriangle(double a, double b, double c) 
 {
-    while(a<0 || b<0 || c<0)
+    while(a<=0 || b<=0 || c<=0)
     {
 	cout << "Были введены отрицательные значения. Попробуйте снова."<<endl;
 	cout << "Введите значения:";

@@ -16,7 +16,9 @@ void calculateRectangle(double width, double height) {
     // Длина диагонали
         double diagonal = sqrt(width * width + height * height);
     // Вывод результатов
-    cout << "Периметр прямоугольника: " << perimeter << "\n";
-    cout << "Площадь прямоугольника: " << area << "\n";
-    cout << "Длина диагонали прямоугольника: " << diagonal << "\n";
-}
+        cout << "Периметр прямоугольника: " << perimeter << "\n";
+        cout << "Площадь прямоугольника: " << area << "\n";
+        cout << "Длина диагонали прямоугольника: " << diagonal << "\n";
+    else:
+        cout << "Такого прямоугольника не существует"
+            }
